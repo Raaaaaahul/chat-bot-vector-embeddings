@@ -8,8 +8,9 @@ import OpenAI from "openai";
 
 dotenv.config();
 
-const BASE_URL = "https://piyushgarg.dev";
-const BASE_DOMAIN = "piyushgarg.dev";
+// ADD the webpage url and the subdomain
+const BASE_URL = "";
+const BASE_DOMAIN = "";
 const openai = new OpenAI();
 
 const chromaClient = new ChromaClient({
@@ -181,4 +182,5 @@ async function chat(question = "") {
 
 const rootNode = new TreeNode(BASE_URL);
 crawl(rootNode);
-chat("what is cohort about?");
+// add your question here
+chat("question");
